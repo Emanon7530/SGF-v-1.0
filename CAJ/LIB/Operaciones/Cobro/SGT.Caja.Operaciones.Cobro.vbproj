@@ -1,0 +1,162 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{CE3115A8-C4A7-4458-B086-465929C972E4}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "cjpsttrn01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "SGT.Caja.Operaciones"
+                StartupObject = "SGT.Caja.Operaciones.(None)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\..\..\INV\LIB\Entidades\bin\iventidd01.dll"
+                />
+                <Reference
+                    Name = "cjentdd01"
+                    AssemblyName = "cjentdd01"
+                    HintPath = "..\..\Entidades\bin\cjentdd01.dll"
+                />
+                <Reference
+                    Name = "ccentdd01"
+                    AssemblyName = "ccentdd01"
+                    HintPath = "..\..\..\..\CXC\LIB\Entidades\bin\ccentdd01.dll"
+                />
+                <Reference
+                    Name = "SGT.PuntodeVenta.Entidades"
+                    AssemblyName = "SGT.PuntodeVenta.Entidades"
+                    HintPath = "..\..\..\..\PTV\LIB\Entidades\bin\SGT.PuntodeVenta.Entidades.dll"
+                />
+                <Reference
+                    Name = "ccfctpst01"
+                    AssemblyName = "ccfctpst01"
+                    HintPath = "..\..\..\..\CXC\LIB\Posteos\PostDocument\bin\ccfctpst01.dll"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "ivcomm01"
+                    AssemblyName = "ivcomm01"
+                    HintPath = "..\..\..\..\INV\LIB\Common\bin\ivcomm01.dll"
+                />
+                <Reference
+                    Name = "HelperClass"
+                    AssemblyName = "HelperClass"
+                    HintPath = "..\..\..\..\FSC\HelperClass\bin\HelperClass.dll"
+                />
+                <Reference
+                    Name = "LibXPrintFiscal"
+                    AssemblyName = "LibXPrintFiscal"
+                    HintPath = "..\..\..\..\FSC\LibXPrintFiscal\bin\LibXPrintFiscal.dll"
+                />
+                <Reference
+                    Name = "LibxPrintFiscalFactura"
+                    AssemblyName = "LibxPrintFiscalFactura"
+                    HintPath = "..\..\..\..\FSC\LibxPrintFiscalFactura\bin\LibxPrintFiscalFactura.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Diagnostics" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsCobro.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsCobroFiscal.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "documentos\DocDomicilio.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "documentos\Egresos.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

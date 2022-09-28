@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="i_ivitem01_WSSGF1_WSSGF1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/WSSGF1/WSSGF1.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

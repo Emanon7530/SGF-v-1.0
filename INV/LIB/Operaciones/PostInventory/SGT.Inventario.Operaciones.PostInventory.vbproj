@@ -1,0 +1,186 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{8D9D8E96-1D89-4ECD-91E7-204ECECE6511}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "ivpstinv01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "SGT.Inventario"
+                StartupObject = "SGT.Inventario.(None)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "SGT.CXP.Entidades"
+                    AssemblyName = "SGT.CXP.Entidades"
+                    HintPath = "..\..\..\..\CXP\LIB\Entidades\bin\SGT.CXP.Entidades.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "cpfctpst01"
+                    AssemblyName = "cpfctpst01"
+                    HintPath = "..\..\..\..\CXP\LIB\Posteos\PostDocument\bin\cpfctpst01.dll"
+                />
+                <Reference
+                    Name = "ccentdd01"
+                    AssemblyName = "ccentdd01"
+                    HintPath = "..\..\..\..\CXC\LIB\Entidades\bin\ccentdd01.dll"
+                />
+                <Reference
+                    Name = "cgcomm01"
+                    AssemblyName = "cgcomm01"
+                    HintPath = "..\..\..\..\CTG\LIB\Common\obj\Debug\cgcomm01.dll"
+                />
+                <Reference
+                    Name = "ctgentd01"
+                    AssemblyName = "ctgentd01"
+                    HintPath = "..\..\..\..\CTG\LIB\Entidades\bin\ctgentd01.dll"
+                />
+                <Reference
+                    Name = "GenerarED"
+                    AssemblyName = "GenerarED"
+                    HintPath = "..\..\..\..\CTG\LIB\Operaciones\GenerarED\bin\GenerarED.dll"
+                />
+                <Reference
+                    Name = "Intrefaces"
+                    AssemblyName = "Intrefaces"
+                    HintPath = "..\..\..\..\CTG\LIB\Intrefaces\bin\Intrefaces.dll"
+                />
+                <Reference
+                    Name = "SGT.Inventario.Common"
+                    Project = "{B6AAFE69-8DC4-460A-8E79-48AAEE815E7A}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SGT.Inventario.Entidades"
+                    Project = "{31ECFC30-31E6-4C73-B96A-DCA05F19930E}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                    Private = "False"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Diagnostics" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsPostInventroy.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\WSSGF1\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\WSSGF1\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\WSSGF1\WSSGF1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSSGF1\WSSGF1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\WSSGF1\"
+                    WebReferenceUrl = "http://localhost/WSSGF1/WSSGF1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

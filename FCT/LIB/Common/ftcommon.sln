@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ftcommon", "ftcommon.vbproj", "{A947EF43-0D43-4A3B-A9EB-74F78D19122D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A947EF43-0D43-4A3B-A9EB-74F78D19122D}.Debug.ActiveCfg = Debug|.NET
+		{A947EF43-0D43-4A3B-A9EB-74F78D19122D}.Debug.Build.0 = Debug|.NET
+		{A947EF43-0D43-4A3B-A9EB-74F78D19122D}.Release.ActiveCfg = Release|.NET
+		{A947EF43-0D43-4A3B-A9EB-74F78D19122D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

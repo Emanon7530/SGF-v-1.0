@@ -1,0 +1,214 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{FD3C6583-7F13-4C46-92A2-9184DE86B293}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "i_ccpaym02"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "i_ccpaym02"
+                StartupObject = "i_ccpaym02.i_ccpaym02"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Interop.Crystal"
+                    AssemblyName = "Interop.Crystal"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\Interop.Crystal.dll"
+                />
+                <Reference
+                    Name = "Microsoft.Office.Core"
+                    Guid = "{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}"
+                    VersionMajor = "2"
+                    VersionMinor = "4"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "VBIDE"
+                    Guid = "{0002E157-0000-0000-C000-000000000046}"
+                    VersionMajor = "5"
+                    VersionMinor = "3"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Microsoft.Office.Interop.Excel"
+                    Guid = "{00020813-0000-0000-C000-000000000046}"
+                    VersionMajor = "1"
+                    VersionMinor = "6"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "ftentdd01"
+                    AssemblyName = "ftentdd01"
+                    HintPath = "..\..\..\FCT\LIB\Entidades\bin\ftentdd01.dll"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\..\INV\LIB\Entidades\bin\iventidd01.dll"
+                />
+                <Reference
+                    Name = "adentdd01"
+                    AssemblyName = "adentdd01"
+                    HintPath = "..\..\..\ADM\LIB\Entidades\bin\adentdd01.dll"
+                />
+                <Reference
+                    Name = "cjentdd01"
+                    AssemblyName = "cjentdd01"
+                    HintPath = "..\..\..\CAJ\LIB\Entidades\bin\cjentdd01.dll"
+                />
+                <Reference
+                    Name = "ccfctpst01"
+                    AssemblyName = "ccfctpst01"
+                    HintPath = "..\..\LIB\Posteos\PostDocument\bin\ccfctpst01.dll"
+                />
+                <Reference
+                    Name = "ctgentd01"
+                    AssemblyName = "ctgentd01"
+                    HintPath = "..\..\..\CTG\LIB\Entidades\bin\ctgentd01.dll"
+                />
+                <Reference
+                    Name = "SGT.PuntodeVenta.Entidades"
+                    AssemblyName = "SGT.PuntodeVenta.Entidades"
+                    HintPath = "..\..\..\PTV\LIB\Entidades\bin\SGT.PuntodeVenta.Entidades.dll"
+                />
+                <Reference
+                    Name = "SGT.ControlBancario.Entidades"
+                    AssemblyName = "SGT.ControlBancario.Entidades"
+                    HintPath = "..\..\..\CTB\LIB\Entidades\bin\SGT.ControlBancario.Entidades.dll"
+                />
+                <Reference
+                    Name = "ccentdd01"
+                    AssemblyName = "ccentdd01"
+                    HintPath = "..\..\LIB\Entidades\bin\ccentdd01.dll"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    Project = "{F61DD2DA-E967-47B3-ADEC-B3AB74BD6C58}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "MaskedTextBox"
+                    Project = "{71541787-A22D-4A65-9C71-7AB7DDF20919}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "XMSAComponents"
+                    Project = "{90E9BCDA-B2FD-4DEC-9F14-505B907F7E8E}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                    Private = "False"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ccpaym02.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ccpaym02.resx"
+                    DependentUpon = "i_ccpaym02.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ccpaym02a.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ccpaym02a.resx"
+                    DependentUpon = "i_ccpaym02a.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

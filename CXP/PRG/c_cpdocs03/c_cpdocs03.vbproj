@@ -1,0 +1,159 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{D297B35D-0101-43FE-8DBC-2BE5AA21EBE1}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "c_cpdocs03"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "c_cpdocs03"
+                StartupObject = "c_cpdocs03.c_cpdocs03"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "C:\SGT\Fuente\Controls\LibXComponents\bin\LibXComponents.dll"
+                    AssemblyFolderKey = "hklm\dn\libx"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "XMsgComponents"
+                    AssemblyName = "XMsgComponents"
+                    HintPath = "C:\SGT\Fuente\Controls\LibXComponents\bin\XMsgComponents.dll"
+                    AssemblyFolderKey = "hklm\dn\libx"
+                />
+                <Reference
+                    Name = "MaskedTextBox"
+                    AssemblyName = "MaskedTextBox"
+                    HintPath = "..\..\..\..\..\..\SGT\Fuente\Controls\LibXComponents\bin\MaskedTextBox.dll"
+                />
+                <Reference
+                    Name = "adentdd01"
+                    AssemblyName = "adentdd01"
+                    HintPath = "..\..\..\ADM\LIB\Entidades\bin\adentdd01.dll"
+                />
+                <Reference
+                    Name = "ftentdd01"
+                    AssemblyName = "ftentdd01"
+                    HintPath = "..\..\..\FCT\LIB\Entidades\bin\ftentdd01.dll"
+                />
+                <Reference
+                    Name = "Interop.Crystal"
+                    AssemblyName = "Interop.Crystal"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\Interop.Crystal.dll"
+                />
+                <Reference
+                    Name = "AxInterop.Crystal"
+                    AssemblyName = "AxInterop.Crystal"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\AxInterop.Crystal.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "c_cpdocs03.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "c_cpdocs03.resx"
+                    DependentUpon = "c_cpdocs03.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

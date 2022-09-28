@@ -1,0 +1,7 @@
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\SGT.Administracion.Entidades.vbprojAssemblyReference.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\SGT.Administracion.Entidades.frmAutorization.resources
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\SGT.Administracion.Entidades.vbproj.GenerateResource.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\SGT.Administracion.Entidades.vbproj.CoreCompileInputs.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.xml
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.pdb

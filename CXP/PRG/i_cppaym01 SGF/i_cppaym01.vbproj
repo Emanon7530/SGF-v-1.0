@@ -1,0 +1,152 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{FD3C6583-7F13-4C46-92A2-9184DE86B293}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "i_cppaym01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "i_cppaym01"
+                StartupObject = "i_cppaym01.i_cppaym01"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\..\INV\LIB\Entidades\bin\iventidd01.dll"
+                />
+                <Reference
+                    Name = "cjpsttrn01"
+                    AssemblyName = "cjpsttrn01"
+                    HintPath = "..\..\..\CAJ\LIB\Operaciones\Cobro\bin\cjpsttrn01.dll"
+                />
+                <Reference
+                    Name = "XMsgComponents"
+                    AssemblyName = "XMsgComponents"
+                    HintPath = "..\..\..\..\..\..\Controls\LibXComponents\bin\XMsgComponents.dll"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "MaskedTextBox"
+                    AssemblyName = "MaskedTextBox"
+                    HintPath = "..\..\..\..\..\..\Controls\LibXComponents\bin\MaskedTextBox.dll"
+                />
+                <Reference
+                    Name = "SGT.ControlBancario.Entidades"
+                    AssemblyName = "SGT.ControlBancario.Entidades"
+                    HintPath = "..\..\..\CTB\LIB\Entidades\bin\SGT.ControlBancario.Entidades.dll"
+                />
+                <Reference
+                    Name = "adentdd01"
+                    AssemblyName = "adentdd01"
+                    HintPath = "..\..\..\ADM\LIB\Entidades\bin\adentdd01.dll"
+                />
+                <Reference
+                    Name = "cpfctpst01"
+                    AssemblyName = "cpfctpst01"
+                    HintPath = "..\..\LIB\Posteos\PostDocument\bin\cpfctpst01.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_cppaym01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_cppaym01.resx"
+                    DependentUpon = "i_cppaym01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

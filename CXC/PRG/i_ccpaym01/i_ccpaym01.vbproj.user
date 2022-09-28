@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <VisualBasic LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "C:\SGT\Fuente\SGT\INV\LIB\Entidades\bin\;C:\SGT\Fuente\SGT\CXC\LIB\Posteos\PostDocument\bin\;C:\SGT\Fuente\SGT\CXC\LIB\Entidades\bin\;C:\Documents and Settings\emanon\Desktop\My Systems\SGT\Fuente\Controls\LibXComponents\bin\;C:\Documents and Settings\emanon\Desktop\My Systems\SGT\Fuente\SGT 3.0\INV\LIB\Entidades\bin\;C:\Documents and Settings\emanon\Desktop\My Systems\SGT\Fuente\SGT 3.0\CXC\LIB\Posteos\PostDocument\bin\;C:\Documents and Settings\emanon\Desktop\My Systems\SGT\Fuente\SGT 3.0\CXC\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon\Desktop\My Systems\SGT\Fuente\Controls\LibXComponents\bin\;C:\Documents and Settings\enriquillo.manon\Desktop\My Systems\SGT\Fuente\SGT 3.0\INV\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon\Desktop\My Systems\SGT\Fuente\SGT 3.0\CXC\LIB\Posteos\PostDocument\bin\;C:\Documents and Settings\enriquillo.manon\Desktop\My Systems\SGT\Fuente\SGT 3.0\CXC\LIB\Entidades\bin\;Z:\SGF\Fuente\Controls\LibXComponents\bin\;Z:\SGF\Fuente\SGF 1.0\INV\LIB\Entidades\bin\;Z:\SGF\Fuente\SGF 1.0\CXC\LIB\Posteos\PostDocument\bin\;Z:\SGF\Fuente\SGF 1.0\CXC\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon.DNCD\My Documents\My Systems\SGF\Fuente\SGF 1.0\INV\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon.DNCD\My Documents\My Systems\SGF\Fuente\SGF 1.0\CXC\LIB\Posteos\PostDocument\bin\;C:\Documents and Settings\enriquillo.manon.DNCD\My Documents\My Systems\SGF\Fuente\SGF 1.0\CXC\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon.DNCD\My Documents\My Systems\SGF\Fuente\SGF 1.0\CAJ\LIB\Entidades\bin\;C:\Documents and Settings\enriquillo.manon.DNCD\My Documents\My Systems\SGF\Fuente\SGF 1.0\PTV\LIB\Entidades\bin\;C:\Manon Sys\SGF\Fuente\Controls\LibXComponents\bin\;C:\Manon Sys\SGF\Fuente\SGF 1.0\INV\LIB\Entidades\bin\;C:\Manon Sys\SGF\Fuente\SGF 1.0\CXC\LIB\Posteos\PostDocument\bin\;C:\Manon Sys\SGF\Fuente\SGF 1.0\CXC\LIB\Entidades\bin\;C:\Manon Sys\SGF\Fuente\SGF 1.0\CAJ\LIB\Entidades\bin\;C:\Manon Sys\SGF\Fuente\SGF 1.0\PTV\LIB\Entidades\bin\;C:\Manon Sys\Controls\LibXComponents\bin\;C:\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\;C:\Manon Sys\SGF 1.0\CXC\LIB\Posteos\PostDocument\bin\;C:\Manon Sys\SGF 1.0\CXC\LIB\Entidades\bin\;C:\Manon Sys\SGF 1.0\CAJ\LIB\Entidades\bin\;C:\Manon Sys\SGF 1.0\PTV\LIB\Entidades\bin\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+    </VisualBasic>
+</VisualStudioProject>
+

@@ -1,0 +1,162 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{C3D205D5-5DC5-49D7-96DD-F45E0327934F}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "i_ivadjus01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "i_ivadjus01"
+                StartupObject = "i_ivadjus01.i_ivadjus01"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "MaskedTextBox"
+                    AssemblyName = "MaskedTextBox"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\MaskedTextBox.dll"
+                />
+                <Reference
+                    Name = "XMsgComponents"
+                    AssemblyName = "XMsgComponents"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\XMsgComponents.dll"
+                />
+                <Reference
+                    Name = "SGT.Inventario.Operaciones.PosteoDocumentos"
+                    AssemblyName = "SGT.Inventario.Operaciones.PosteoDocumentos"
+                    HintPath = "..\..\LIB\Operaciones\PosteoDocumento\bin\SGT.Inventario.Operaciones.PosteoDocumentos.dll"
+                />
+                <Reference
+                    Name = "ivcomm01"
+                    AssemblyName = "ivcomm01"
+                    HintPath = "..\..\LIB\Common\bin\ivcomm01.dll"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\LIB\Entidades\bin\iventidd01.dll"
+                />
+                <Reference
+                    Name = "ivdevpst01"
+                    AssemblyName = "ivdevpst01"
+                    HintPath = "..\..\LIB\Operaciones\PostDevolucion\bin\ivdevpst01.dll"
+                />
+                <Reference
+                    Name = "ivpstinv01"
+                    AssemblyName = "ivpstinv01"
+                    HintPath = "..\..\LIB\Operaciones\PostInventory\bin\ivpstinv01.dll"
+                />
+                <Reference
+                    Name = "ftentdd01"
+                    AssemblyName = "ftentdd01"
+                    HintPath = "..\..\..\FCT\LIB\Entidades\bin\ftentdd01.dll"
+                />
+                <Reference
+                    Name = "ConteoFisico"
+                    AssemblyName = "ConteoFisico"
+                    HintPath = "..\..\LIB\Operaciones\ConteoFisico\bin\ConteoFisico.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ivadjus01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ivadjus01.resx"
+                    DependentUpon = "i_ivadjus01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

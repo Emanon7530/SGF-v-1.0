@@ -1,0 +1,6 @@
+<configuration>
+	<appSettings>
+    		<add key="LibXConnectionStr" value="Provider=SQLOLEDB;user id=sa;data source='WS-CAM-EMANON\DEVELOPER';persist security info=True;initial catalog=sgt;password=sa" />
+    		<add key="LibXConnectReport" value="DSN=WS-CAM-EMANON\DEVELOPER;UID=sa;PWD=sa;DSQ=sgt"></add>
+	</appSettings>
+</configuration>

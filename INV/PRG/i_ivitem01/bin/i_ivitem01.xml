@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+i_ivitem01
+</name>
+</assembly>
+<members>
+<member name="T:i_ivitem01.WSSGF1.WSSGF1">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.#ctor">
+<remarks/>
+</member>
+<member name="E:i_ivitem01.WSSGF1.WSSGF1.GetProductCompleted">
+<remarks/>
+</member>
+<member name="E:i_ivitem01.WSSGF1.WSSGF1.InsertarMaestroCompleted">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.GetProduct(System.String)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.BeginGetProduct(System.String,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.EndGetProduct(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.GetProductAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.GetProductAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.InsertarMaestro(System.Data.DataSet)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.BeginInsertarMaestro(System.Data.DataSet,System.AsyncCallback,System.Object)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.EndInsertarMaestro(System.IAsyncResult)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.InsertarMaestroAsync(System.Data.DataSet)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.InsertarMaestroAsync(System.Data.DataSet,System.Object)">
+<remarks/>
+</member>
+<member name="M:i_ivitem01.WSSGF1.WSSGF1.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:i_ivitem01.WSSGF1.GetProductCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:i_ivitem01.WSSGF1.GetProductCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:i_ivitem01.WSSGF1.GetProductCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:i_ivitem01.WSSGF1.InsertarMaestroCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:i_ivitem01.WSSGF1.InsertarMaestroCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:i_ivitem01.WSSGF1.InsertarMaestroCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

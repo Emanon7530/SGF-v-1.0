@@ -1,0 +1,14 @@
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\ivcomm01.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\ivcomm01.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\ivcomm01.xml
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\LibXComponents.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\MaskedTextBox.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\XMsgComponents.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\LibXComponents.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\MaskedTextBox.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\bin\XMsgComponents.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\obj\Debug\SGT.Inventario.Common.vbproj.CoreCompileInputs.cache
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\obj\Debug\SGT.Inventario.Common.vbproj.CopyComplete
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\obj\Debug\ivcomm01.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\obj\Debug\ivcomm01.xml
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Common\obj\Debug\ivcomm01.pdb

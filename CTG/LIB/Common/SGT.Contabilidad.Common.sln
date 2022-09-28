@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SGT.Contabilidad.Common", "SGT.Contabilidad.Common.vbproj", "{2081D6BF-2042-4413-A85E-49C760CCE16D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2081D6BF-2042-4413-A85E-49C760CCE16D}.Debug.ActiveCfg = Debug|.NET
+		{2081D6BF-2042-4413-A85E-49C760CCE16D}.Debug.Build.0 = Debug|.NET
+		{2081D6BF-2042-4413-A85E-49C760CCE16D}.Release.ActiveCfg = Release|.NET
+		{2081D6BF-2042-4413-A85E-49C760CCE16D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

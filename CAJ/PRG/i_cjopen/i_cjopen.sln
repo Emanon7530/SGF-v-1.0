@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "i_cjopen", "i_cjopen.vbproj", "{670E105B-8069-4E43-A57F-92A5A2908DFC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{670E105B-8069-4E43-A57F-92A5A2908DFC}.Debug.ActiveCfg = Debug|.NET
+		{670E105B-8069-4E43-A57F-92A5A2908DFC}.Debug.Build.0 = Debug|.NET
+		{670E105B-8069-4E43-A57F-92A5A2908DFC}.Release.ActiveCfg = Release|.NET
+		{670E105B-8069-4E43-A57F-92A5A2908DFC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

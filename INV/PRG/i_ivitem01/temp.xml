@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSGF1>
+  <ivitemm>
+    <item_code>086364</item_code>
+    <item_name>10CC II RAMIRO</item_name>
+    <abreviada>10CC II RAMIRO</abreviada>
+    <unit_code>TUBO</unit_code>
+    <prov_code>123</prov_code>
+    <group_code>1</group_code>
+    <purch_unit>TUBO </purch_unit>
+    <taxable>1</taxable>
+    <item_status>1</item_status>
+    <userid>9</userid>
+    <imprimir_etiq>1</imprimir_etiq>
+    <asumir_emp>1</asumir_emp>
+    <sugerir_compra>1</sugerir_compra>
+    <Aplicar_Vcmto>1</Aplicar_Vcmto>
+    <prd_controlado>0</prd_controlado>
+    <item_update>2013-01-14T00:00:00.0000000-04:00</item_update>
+    <item_comm>0</item_comm>
+  </ivitemm>
+  <ivitemd>
+    <whse_code>1</whse_code>
+    <item_code>086364</item_code>
+    <purch_cost>8.01</purch_cost>
+    <last_cost>8.00</last_cost>
+    <avg_cost>0</avg_cost>
+    <estante>02418</estante>
+    <price>10.41</price>
+    <benef>30.00</benef>
+    <BackOrder>0</BackOrder>
+    <existencia>720</existencia>
+    <datelast_purch>2012-08-09T00:00:00.0000000-04:00</datelast_purch>
+    <datelast_sales>2012-12-22T00:00:00.0000000-04:00</datelast_sales>
+    <taxable>1</taxable>
+    <rounded>0.050</rounded>
+    <frizado_inv>0</frizado_inv>
+    <aplica_dscnt>1</aplica_dscnt>
+    <fecha_conteo>2012-03-22T00:00:00.0000000-04:00</fecha_conteo>
+    <vencimiento>1</vencimiento>
+  </ivitemd>
+  <ivunitd>
+    <unit_code>TUBO</unit_code>
+    <item_code>086364</item_code>
+    <factor>1.00</factor>
+    <unit_type>3</unit_type>
+  </ivunitd>
+  <ivunitd>
+    <unit_code>UNID</unit_code>
+    <item_code>086364</item_code>
+    <factor>1.00</factor>
+    <unit_type>3</unit_type>
+  </ivunitd>
+</dsSGF1>

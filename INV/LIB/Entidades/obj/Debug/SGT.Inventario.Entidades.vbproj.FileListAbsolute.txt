@@ -1,0 +1,11 @@
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\iventidd01.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\iventidd01.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\iventidd01.xml
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\LibXComponents.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\bin\LibXComponents.pdb
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\SGT.Inventario.Entidades.vbprojAssemblyReference.cache
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\SGT.Inventario.Entidades.vbproj.CoreCompileInputs.cache
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\SGT.Inventario.Entidades.vbproj.CopyComplete
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\iventidd01.dll
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\iventidd01.xml
+D:\Emanon\Manon Sys\SGF 1.0\INV\LIB\Entidades\obj\Debug\iventidd01.pdb

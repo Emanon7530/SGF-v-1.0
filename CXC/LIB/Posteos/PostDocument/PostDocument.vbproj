@@ -1,0 +1,147 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{B65A33AB-916B-4B65-A8F3-7ECB4F24762B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "ccfctpst01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "SGT.CXC.Posteos"
+                StartupObject = "SGT.CXC.Posteos.(None)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "XMsgComponents"
+                    AssemblyName = "XMsgComponents"
+                    HintPath = "..\..\..\..\..\Controls\LibXComponents\bin\XMsgComponents.dll"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "ivcomm01"
+                    AssemblyName = "ivcomm01"
+                    HintPath = "..\..\..\..\INV\LIB\Common\bin\ivcomm01.dll"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\..\..\INV\LIB\Entidades\bin\iventidd01.dll"
+                />
+                <Reference
+                    Name = "ivpstinv01"
+                    AssemblyName = "ivpstinv01"
+                    HintPath = "..\..\..\..\INV\LIB\Operaciones\PostInventory\bin\ivpstinv01.dll"
+                />
+                <Reference
+                    Name = "ccentdd01"
+                    AssemblyName = "ccentdd01"
+                    HintPath = "..\..\Entidades\bin\ccentdd01.dll"
+                />
+                <Reference
+                    Name = "SGT.ControlBancario.Operaciones.PostDocument"
+                    AssemblyName = "SGT.ControlBancario.Operaciones.PostDocument"
+                    HintPath = "..\..\..\..\CTB\LIB\Operaciones\PostDocument\bin\SGT.ControlBancario.Operaciones.PostDocument.dll"
+                />
+                <Reference
+                    Name = "ctgentd01"
+                    AssemblyName = "ctgentd01"
+                    HintPath = "..\..\..\..\CTG\LIB\Entidades\bin\ctgentd01.dll"
+                />
+                <Reference
+                    Name = "SGT.ControlBancario.Entidades"
+                    AssemblyName = "SGT.ControlBancario.Entidades"
+                    HintPath = "..\..\..\..\CTB\LIB\Entidades\bin\SGT.ControlBancario.Entidades.dll"
+                />
+                <Reference
+                    Name = "cpfctpst01"
+                    AssemblyName = "cpfctpst01"
+                    HintPath = "..\..\..\..\CXP\LIB\Posteos\PostDocument\bin\cpfctpst01.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Diagnostics" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "clsPostDocument.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

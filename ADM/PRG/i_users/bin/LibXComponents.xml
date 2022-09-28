@@ -1,0 +1,394 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LibXComponents
+</name>
+</assembly>
+<members>
+<member name="T:LibX.Data.Adapter">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:LibX.Data.Adapter.Save(System.Data.DataTable)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+</member>
+<member name="M:LibX.Data.Adapter.Save(System.Data.DataTable,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+ <param name="serialColName"></param>
+</member>
+<member name="M:LibX.Data.Adapter.Save(System.Data.DataTable,System.String,LibX.LibXDbSourceTable)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+ <param name="serialColName"></param>
+ <param name="tableInfo"></param>
+</member>
+<member name="M:LibX.Data.Adapter.Save(System.Data.DataTable,System.String,LibX.LibXDbSourceTable,System.Data.DataRow)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+ <param name="serialColName"></param>
+ <param name="tableInfo"></param>
+ <param name="masterRow"></param>
+</member>
+<member name="M:LibX.Data.Adapter.OnRowUpdated(System.Object,System.Data.OleDb.OleDbRowUpdatedEventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:LibX.Data.Adapter.OnRowUpdating(System.Object,System.Data.OleDb.OleDbRowUpdatingEventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:LibX.Data.Adapter.BUpCmd(System.Object,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="p_objDataObject"></param>
+ <param name="p_strTable"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Adapter.buildParamStrWherePk(System.Object,System.Array@,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="p_objTable"></param>
+ <param name="p_objExceptionArr"></param>
+ <param name="joinDefaultWhere"></param>
+ <returns></returns>
+</member>
+<member name="T:LibX.Data.AdpaterRowUpdatingEventArgs">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="T:LibX.Data.AdpaterRowUpdatedEventArgs">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="T:LibX.Data.Manager">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:LibX.Data.Manager.#cctor">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:LibX.Data.Manager.GetMessage(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="numero"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetMessage(System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="numero"></param>
+ <param name="comment"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.OpenConnection">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:LibX.Data.Manager.GetNewDataTable(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.Save(System.Data.DataTable)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+</member>
+<member name="M:LibX.Data.Manager.Save(System.Data.DataTable,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="table"></param>
+ <param name="serialColName"></param>
+</member>
+<member name="M:LibX.Data.Manager.GetDataTable(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetDataTable(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <param name="tableName"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetDataTable(System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <param name="withkey"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetDataTable(System.String,System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <param name="tableName"></param>
+ <param name="withkey"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.ExecuteNonQuery(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetDataRow(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.GetScalar(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.ExecuteSql(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.FillSchema(System.Data.DataTable,System.String,System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="dt"></param>
+ <param name="tabName"></param>
+ <param name="sSql"></param>
+ <param name="withKey"></param>
+</member>
+<member name="M:LibX.Data.Manager.ApplayKeyString(System.Data.DataTable,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="oTable"></param>
+ <param name="key"></param>
+</member>
+<member name="M:LibX.Data.Manager.FillSchema(System.Data.DataTable,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="dt"></param>
+ <param name="tableName"></param>
+</member>
+<member name="M:LibX.Data.Manager.FillSchema(System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="dt"></param>
+ <param name="tableName"></param>
+ <param name="withkey"></param>
+</member>
+<member name="M:LibX.Data.Manager.GetNewDataTable(System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <param name="withKey"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.OpenConnection(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="usr"></param>
+ <param name="pass"></param>
+</member>
+<member name="M:LibX.Data.Manager.BuildInsert(System.String,System.Data.IDataParameterCollection,System.String,System.String@,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <param name="params"></param>
+ <param name="serialColName"></param>
+ <param name="serialParamName"></param>
+ <param name="hasBinaryFields"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.BuildUpdate(System.String,System.Data.IDataParameterCollection,System.Data.IDataParameterCollection,System.Data.IDataParameterCollection,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <param name="wParams"></param>
+ <param name="sParams"></param>
+ <param name="allParams"></param>
+ <param name="hasBinaryFields"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.BuildDelete(System.String,System.Data.IDataParameterCollection)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <param name="params"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.Manager.BuildSelect(System.String,System.Data.IDataParameterCollection,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="tabName"></param>
+ <param name="params"></param>
+ <param name="sql"></param>
+ <returns></returns>
+</member>
+<member name="T:LibX.Data.XConnection">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="P:LibX.Data.XConnection.AutoRollBackWhenError">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LibX.Data.XConnection.ConnectionObject">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LibX.Data.XConnection.IsIntransaction">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.#ctor">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:LibX.Data.XConnection.#ctor(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="conStr"></param>
+</member>
+<member name="M:LibX.Data.XConnection.BeginTransaction">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.BeginTransaction(System.Data.IsolationLevel)">
+ <summary>
+ 
+ </summary>
+ <param name="il"></param>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.ChangeDatabase(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="databaseName"></param>
+</member>
+<member name="M:LibX.Data.XConnection.Close">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="P:LibX.Data.XConnection.ConnectionString">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.CreateCommand">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.Open">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="P:LibX.Data.XConnection.UseCopyConnection">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LibX.Data.XConnection.CopyConnection">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.Data.XConnection.GetDate">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LibX.LibxDateTimePicker.OnBindingContextChanged(System.EventArgs)">
+
+</member>
+<member name="M:LibX.LibXGrid.GetValue(System.Windows.Forms.DataGridColumnStyle)">
+EMR 22/11/2206
+</member>
+<member name="M:LibX.LibXGridlight.GetValue(System.Windows.Forms.DataGridColumnStyle)">
+EMR 22/11/2206
+</member>
+<member name="M:LibX.LibXRunner.RunWithPath(System.String)">
+
+</member>
+<member name="P:LibX.XEditTextBoxColumn.Column">
+Protected Overloads Overrides Sub Edit(ByVal source As System.Windows.Forms.CurrencyManager, ByVal rowNum As Integer, ByVal bounds As System.Drawing.Rectangle, ByVal p_readOnly As Boolean, ByVal instantText As String, ByVal cellIsVisible As Boolean)
+    If m_blnIsReadOnly Then
+        Exit Sub
+    End If
+    MyBase.Edit(source, rowNum, bounds, p_readOnly, instantText, cellIsVisible)
+End Sub
+</member>
+</members>
+</doc>

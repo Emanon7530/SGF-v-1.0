@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://REDSOFT-PR1/WSSGF1/WSSGF1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://REDSOFT-PR1/WSSGF1/WSSGF1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://REDSOFT-PR1/WSSGF1/WSSGF1">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="GetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="itemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaestro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaestroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarMaestroResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCompra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCompraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarCompraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarVentas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarVentasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarVentasResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearEntradasFromSalidas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearEntradasFromSalidasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearEntradasFromSalidasResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarEntradaDiario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarEntradaDiarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarEntradaDiarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarOrdenCompras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarOrdenComprasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarOrdenComprasResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaestroSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarMaestro" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaestroSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarMaestroResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCompraSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarCompra" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCompraSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarVentasSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarVentas" />
+  </wsdl:message>
+  <wsdl:message name="InsertarVentasSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarVentasResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearEntradasFromSalidasSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearEntradasFromSalidas" />
+  </wsdl:message>
+  <wsdl:message name="CrearEntradasFromSalidasSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearEntradasFromSalidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarEntradaDiarioSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarEntradaDiario" />
+  </wsdl:message>
+  <wsdl:message name="InsertarEntradaDiarioSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarEntradaDiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarOrdenComprasSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenCompras" />
+  </wsdl:message>
+  <wsdl:message name="InsertarOrdenComprasSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenComprasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpGetIn">
+    <wsdl:part name="itemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpPostIn">
+    <wsdl:part name="itemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WSSGF1Soap">
+    <wsdl:operation name="GetProduct">
+      <wsdl:input message="tns:GetProductSoapIn" />
+      <wsdl:output message="tns:GetProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaestro">
+      <wsdl:input message="tns:InsertarMaestroSoapIn" />
+      <wsdl:output message="tns:InsertarMaestroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCompra">
+      <wsdl:input message="tns:InsertarCompraSoapIn" />
+      <wsdl:output message="tns:InsertarCompraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarVentas">
+      <wsdl:input message="tns:InsertarVentasSoapIn" />
+      <wsdl:output message="tns:InsertarVentasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearEntradasFromSalidas">
+      <wsdl:input message="tns:CrearEntradasFromSalidasSoapIn" />
+      <wsdl:output message="tns:CrearEntradasFromSalidasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarEntradaDiario">
+      <wsdl:input message="tns:InsertarEntradaDiarioSoapIn" />
+      <wsdl:output message="tns:InsertarEntradaDiarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenCompras">
+      <wsdl:input message="tns:InsertarOrdenComprasSoapIn" />
+      <wsdl:output message="tns:InsertarOrdenComprasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSSGF1HttpGet">
+    <wsdl:operation name="GetProduct">
+      <wsdl:input message="tns:GetProductHttpGetIn" />
+      <wsdl:output message="tns:GetProductHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSSGF1HttpPost">
+    <wsdl:operation name="GetProduct">
+      <wsdl:input message="tns:GetProductHttpPostIn" />
+      <wsdl:output message="tns:GetProductHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSSGF1Soap" type="tns:WSSGF1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaestro">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarMaestro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCompra">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarVentas">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarVentas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearEntradasFromSalidas">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/CrearEntradasFromSalidas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarEntradaDiario">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarEntradaDiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenCompras">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarOrdenCompras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSSGF1HttpGet" type="tns:WSSGF1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetProduct">
+      <http:operation location="/GetProduct" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSSGF1HttpPost" type="tns:WSSGF1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetProduct">
+      <http:operation location="/GetProduct" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSSGF1">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="WSSGF1Soap" binding="tns:WSSGF1Soap">
+      <soap:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSSGF1HttpGet" binding="tns:WSSGF1HttpGet">
+      <http:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSSGF1HttpPost" binding="tns:WSSGF1HttpPost">
+      <http:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

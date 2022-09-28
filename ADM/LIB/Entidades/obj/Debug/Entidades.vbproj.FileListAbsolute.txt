@@ -1,0 +1,16 @@
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\SGT.Administracion.Entidades.frmAutorization.resources
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\Entidades.vbproj.CoreCompileInputs.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.pdb
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\Entidades.vbprojAssemblyReference.cache
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\adentdd01.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\adentdd01.pdb
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\adentdd01.xml
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\LibXComponents.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\MaskedTextBox.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\XMsgComponents.dll
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\LibXComponents.pdb
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\bin\LibXComponents.xml
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\Entidades.vbproj.CopyComplete
+D:\Emanon\Manon Sys\SGF 1.0\ADM\LIB\Entidades\obj\Debug\adentdd01.xml

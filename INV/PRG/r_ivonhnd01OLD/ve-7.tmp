@@ -1,0 +1,977 @@
+Imports LibX
+Public Class r_ivonhnd01
+    Inherits System.Windows.Forms.Form
+
+#Region " Windows Form Designer generated code "
+
+    Public Sub New()
+        MyBase.New()
+
+        'This call is required by the Windows Form Designer.
+        InitializeComponent()
+
+        'Add any initialization after the InitializeComponent() call
+
+    End Sub
+
+    'Form overrides dispose to clean up the component list.
+    Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing Then
+            If Not (components Is Nothing) Then
+                components.Dispose()
+            End If
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    Friend WithEvents LibXConnector1 As LibX.LibXConnector
+    Friend WithEvents XTextBox1 As LibX.XTextBox
+    Friend WithEvents XTextBox2 As LibX.XTextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents LibXDbSourceTable2 As LibX.LibXDbSourceTable
+    Friend WithEvents fecHasta As LibX.LibxDateTimePicker
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnEjecutar As System.Windows.Forms.Button
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents DataSet1 As System.Data.DataSet
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblLastClose As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents group_name As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents LibXLookup2 As LibX.LibXLookup
+    Friend WithEvents LibXLookup3 As LibX.LibXLookup
+    Friend WithEvents chk_cero As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents LibXLookup4 As LibX.LibXLookup
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents LibXLookup6 As LibX.LibXLookup
+    Friend WithEvents LibXDbSourceTable1 As LibX.LibXDbSourceTable
+    Friend WithEvents DataColumn1 As System.Data.DataColumn
+    Friend WithEvents DataColumn2 As System.Data.DataColumn
+    Friend WithEvents DataColumn3 As System.Data.DataColumn
+    Friend WithEvents DataColumn4 As System.Data.DataColumn
+    Friend WithEvents sgroup_name As System.Windows.Forms.TextBox
+    Friend WithEvents prov_name As System.Windows.Forms.TextBox
+    Friend WithEvents txtitem_name As System.Windows.Forms.TextBox
+    Friend WithEvents ivitemm As System.Data.DataTable
+    Friend WithEvents LibXDbSourceTable3 As LibX.LibXDbSourceTable
+    Friend WithEvents ivitemr As System.Data.DataTable
+    Friend WithEvents DataColumn5 As System.Data.DataColumn
+    Friend WithEvents DataColumn6 As System.Data.DataColumn
+    Friend WithEvents DataColumn7 As System.Data.DataColumn
+    Friend WithEvents DataColumn8 As System.Data.DataColumn
+    Friend WithEvents DataColumn9 As System.Data.DataColumn
+    Friend WithEvents DataColumn10 As System.Data.DataColumn
+    Friend WithEvents DataColumn11 As System.Data.DataColumn
+    Friend WithEvents DataColumn12 As System.Data.DataColumn
+    Friend WithEvents DataColumn13 As System.Data.DataColumn
+    <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Me.LibXConnector1 = New LibX.LibXConnector(Me.components)
+        Me.DataSet1 = New System.Data.DataSet
+        Me.ivitemm = New System.Data.DataTable
+        Me.DataColumn1 = New System.Data.DataColumn
+        Me.DataColumn2 = New System.Data.DataColumn
+        Me.DataColumn3 = New System.Data.DataColumn
+        Me.DataColumn4 = New System.Data.DataColumn
+        Me.ivitemr = New System.Data.DataTable
+        Me.DataColumn5 = New System.Data.DataColumn
+        Me.DataColumn6 = New System.Data.DataColumn
+        Me.DataColumn7 = New System.Data.DataColumn
+        Me.DataColumn8 = New System.Data.DataColumn
+        Me.DataColumn9 = New System.Data.DataColumn
+        Me.DataColumn10 = New System.Data.DataColumn
+        Me.DataColumn11 = New System.Data.DataColumn
+        Me.DataColumn12 = New System.Data.DataColumn
+        Me.DataColumn13 = New System.Data.DataColumn
+        Me.LibXDbSourceTable1 = New LibX.LibXDbSourceTable
+        Me.LibXDbSourceTable3 = New LibX.LibXDbSourceTable
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.LibXDbSourceTable2 = New LibX.LibXDbSourceTable
+        Me.fecHasta = New LibX.LibxDateTimePicker
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.btnClose = New System.Windows.Forms.Button
+        Me.btnEjecutar = New System.Windows.Forms.Button
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.lblLastClose = New System.Windows.Forms.Label
+        Me.chk_cero = New System.Windows.Forms.CheckBox
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.sgroup_name = New System.Windows.Forms.TextBox
+        Me.group_name = New System.Windows.Forms.TextBox
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.LibXLookup2 = New LibX.LibXLookup
+        Me.LibXLookup3 = New LibX.LibXLookup
+        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.prov_name = New System.Windows.Forms.TextBox
+        Me.Label7 = New System.Windows.Forms.Label
+        Me.LibXLookup4 = New LibX.LibXLookup
+        Me.TextBox8 = New System.Windows.Forms.TextBox
+        Me.txtitem_name = New System.Windows.Forms.TextBox
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.LibXLookup6 = New LibX.LibXLookup
+        CType(Me.LibXConnector1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ivitemm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ivitemr, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'LibXConnector1
+        '
+        Me.LibXConnector1.AllowDelete = False
+        Me.LibXConnector1.AllowEdit = False
+        Me.LibXConnector1.AllowNew = False
+        Me.LibXConnector1.AllowPrint = True
+        Me.LibXConnector1.AllowQuery = True
+        Me.LibXConnector1.BOF = False
+        Me.LibXConnector1.CanExecuteFind = True
+        Me.LibXConnector1.DataMember = "ivitemm"
+        Me.LibXConnector1.DataSource = Me.DataSet1
+        Me.LibXConnector1.EOF = False
+        Me.LibXConnector1.HandledRowsFill = True
+        Me.LibXConnector1.HandledUpdates = True
+        Me.LibXConnector1.HasRecords = False
+        Me.LibXConnector1.IsEditing = False
+        Me.LibXConnector1.IsHeaderOnGrid = False
+        Me.LibXConnector1.ModuleName = Nothing
+        Me.LibXConnector1.OwnerForm = Me
+        Me.LibXConnector1.Parameters = Nothing
+        Me.LibXConnector1.RecordCount = 0
+        Me.LibXConnector1.ReportMode = False
+        Me.LibXConnector1.ReportName = Nothing
+        Me.LibXConnector1.Sources.AddRange(New LibX.LibXDbSourceTable() {Me.LibXDbSourceTable1, Me.LibXDbSourceTable3})
+        Me.LibXConnector1.State = LibX.LibxConnectorState.none
+        Me.LibXConnector1.UpdatePrimaryKeyColumns = False
+        Me.LibXConnector1.UseTransactions = True
+        '
+        'DataSet1
+        '
+        Me.LibXConnector1.SetDataGenerator(Me.DataSet1, Me.LibXConnector1)
+        Me.DataSet1.DataSetName = "NewDataSet"
+        Me.LibXConnector1.SetDefineAll(Me.DataSet1, True)
+        Me.DataSet1.Locale = New System.Globalization.CultureInfo("es-DO")
+        Me.DataSet1.Tables.AddRange(New System.Data.DataTable() {Me.ivitemm, Me.ivitemr})
+        '
+        'ivitemm
+        '
+        Me.ivitemm.Columns.AddRange(New System.Data.DataColumn() {Me.DataColumn1, Me.DataColumn2, Me.DataColumn3, Me.DataColumn4})
+        Me.ivitemm.Constraints.AddRange(New System.Data.Constraint() {New System.Data.UniqueConstraint("Constraint1", New String() {"item_code"}, True)})
+        Me.ivitemm.PrimaryKey = New System.Data.DataColumn() {Me.DataColumn4}
+        Me.ivitemm.TableName = "ivitemm"
+        '
+        'DataColumn1
+        '
+        Me.DataColumn1.AllowDBNull = False
+        Me.DataColumn1.ColumnName = "prov_code"
+        Me.DataColumn1.DataType = GetType(System.Int32)
+        '
+        'DataColumn2
+        '
+        Me.DataColumn2.AllowDBNull = False
+        Me.DataColumn2.ColumnName = "group_code"
+        Me.DataColumn2.DataType = GetType(System.Int32)
+        '
+        'DataColumn3
+        '
+        Me.DataColumn3.ColumnName = "sgroup_code"
+        Me.DataColumn3.DataType = GetType(System.Int32)
+        '
+        'DataColumn4
+        '
+        Me.DataColumn4.AllowDBNull = False
+        Me.DataColumn4.ColumnName = "item_code"
+        Me.DataColumn4.MaxLength = 10
+        '
+        'ivitemr
+        '
+        Me.ivitemr.Columns.AddRange(New System.Data.DataColumn() {Me.DataColumn5, Me.DataColumn6, Me.DataColumn7, Me.DataColumn8, Me.DataColumn9, Me.DataColumn10, Me.DataColumn11, Me.DataColumn12, Me.DataColumn13})
+        Me.ivitemr.Constraints.AddRange(New System.Data.Constraint() {New System.Data.UniqueConstraint("Constraint1", New String() {"itemid", "item_code"}, True)})
+        Me.ivitemr.PrimaryKey = New System.Data.DataColumn() {Me.DataColumn5, Me.DataColumn7}
+        Me.ivitemr.TableName = "ivitemr"
+        '
+        'DataColumn5
+        '
+        Me.DataColumn5.AllowDBNull = False
+        Me.DataColumn5.ColumnName = "itemid"
+        Me.DataColumn5.DataType = GetType(System.Int32)
+        '
+        'DataColumn6
+        '
+        Me.DataColumn6.AllowDBNull = False
+        Me.DataColumn6.ColumnName = "whse_code"
+        Me.DataColumn6.DataType = GetType(System.Int32)
+        '
+        'DataColumn7
+        '
+        Me.DataColumn7.AllowDBNull = False
+        Me.DataColumn7.ColumnName = "item_code"
+        Me.DataColumn7.MaxLength = 15
+        '
+        'DataColumn8
+        '
+        Me.DataColumn8.ColumnName = "item_name"
+        Me.DataColumn8.MaxLength = 60
+        '
+        'DataColumn9
+        '
+        Me.DataColumn9.AllowDBNull = False
+        Me.DataColumn9.ColumnName = "unidads"
+        Me.DataColumn9.MaxLength = 5
+        '
+        'DataColumn10
+        '
+        Me.DataColumn10.ColumnName = "onhand"
+        Me.DataColumn10.DataType = GetType(System.Int32)
+        '
+        'DataColumn11
+        '
+        Me.DataColumn11.ColumnName = "costus"
+        Me.DataColumn11.DataType = GetType(System.Decimal)
+        '
+        'DataColumn12
+        '
+        Me.DataColumn12.ColumnName = "priceus"
+        Me.DataColumn12.DataType = GetType(System.Decimal)
+        '
+        'DataColumn13
+        '
+        Me.DataColumn13.ColumnName = "ubicac"
+        Me.DataColumn13.MaxLength = 15
+        '
+        'LibXDbSourceTable1
+        '
+        Me.LibXDbSourceTable1.AllowDelete = True
+        Me.LibXDbSourceTable1.AllowEdit = True
+        Me.LibXDbSourceTable1.AllowNew = True
+        Me.LibXDbSourceTable1.AutoIncrementSerial = False
+        Me.LibXDbSourceTable1.CustomDbUpdate = False
+        Me.LibXDbSourceTable1.DeleteOrder = 0
+        Me.LibXDbSourceTable1.FillOnQuery = True
+        Me.LibXDbSourceTable1.FillOnRowChange = False
+        Me.LibXDbSourceTable1.HeaderIsOnGrid = False
+        Me.LibXDbSourceTable1.InnerJon = True
+        Me.LibXDbSourceTable1.InsertOrder = 0
+        Me.LibXDbSourceTable1.IsDetail = False
+        Me.LibXDbSourceTable1.KeyFields = Nothing
+        Me.LibXDbSourceTable1.LineColName = Nothing
+        Me.LibXDbSourceTable1.MasterDetailRelation = Nothing
+        Me.LibXDbSourceTable1.MasterTableName = Nothing
+        Me.LibXDbSourceTable1.SerialColumnName = Nothing
+        Me.LibXDbSourceTable1.Sort = Nothing
+        Me.LibXDbSourceTable1.Source = New String() {"select ivitemm.prov_code,ivitemm.group_code,ivitemm.sgroup_code,ivitemm.item_code" & _
+        "", "from ivitemm"}
+        Me.LibXDbSourceTable1.TableName = "ivitemm"
+        Me.LibXDbSourceTable1.UpdateOrder = 0
+        Me.LibXDbSourceTable1.UseRowRetrieve = False
+        '
+        'LibXDbSourceTable3
+        '
+        Me.LibXDbSourceTable3.AllowDelete = True
+        Me.LibXDbSourceTable3.AllowEdit = True
+        Me.LibXDbSourceTable3.AllowNew = True
+        Me.LibXDbSourceTable3.AutoIncrementSerial = False
+        Me.LibXDbSourceTable3.CustomDbUpdate = False
+        Me.LibXDbSourceTable3.DeleteOrder = 0
+        Me.LibXDbSourceTable3.FillOnQuery = True
+        Me.LibXDbSourceTable3.FillOnRowChange = False
+        Me.LibXDbSourceTable3.HeaderIsOnGrid = False
+        Me.LibXDbSourceTable3.InnerJon = True
+        Me.LibXDbSourceTable3.InsertOrder = 0
+        Me.LibXDbSourceTable3.IsDetail = False
+        Me.LibXDbSourceTable3.KeyFields = Nothing
+        Me.LibXDbSourceTable3.LineColName = Nothing
+        Me.LibXDbSourceTable3.MasterDetailRelation = Nothing
+        Me.LibXDbSourceTable3.MasterTableName = Nothing
+        Me.LibXDbSourceTable3.SerialColumnName = Nothing
+        Me.LibXDbSourceTable3.Sort = Nothing
+        Me.LibXDbSourceTable3.Source = Nothing
+        Me.LibXDbSourceTable3.TableName = "ivitemr"
+        Me.LibXDbSourceTable3.UpdateOrder = 0
+        Me.LibXDbSourceTable3.UseRowRetrieve = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label2.Location = New System.Drawing.Point(8, 212)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(85, 16)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Fecha de Corte:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LibXDbSourceTable2
+        '
+        Me.LibXDbSourceTable2.AllowDelete = True
+        Me.LibXDbSourceTable2.AllowEdit = True
+        Me.LibXDbSourceTable2.AllowNew = True
+        Me.LibXDbSourceTable2.AutoIncrementSerial = False
+        Me.LibXDbSourceTable2.CustomDbUpdate = False
+        Me.LibXDbSourceTable2.DeleteOrder = 0
+        Me.LibXDbSourceTable2.FillOnQuery = True
+        Me.LibXDbSourceTable2.FillOnRowChange = False
+        Me.LibXDbSourceTable2.HeaderIsOnGrid = False
+        Me.LibXDbSourceTable2.InnerJon = True
+        Me.LibXDbSourceTable2.InsertOrder = 0
+        Me.LibXDbSourceTable2.IsDetail = False
+        Me.LibXDbSourceTable2.KeyFields = Nothing
+        Me.LibXDbSourceTable2.LineColName = Nothing
+        Me.LibXDbSourceTable2.MasterDetailRelation = Nothing
+        Me.LibXDbSourceTable2.MasterTableName = Nothing
+        Me.LibXDbSourceTable2.SerialColumnName = Nothing
+        Me.LibXDbSourceTable2.Sort = Nothing
+        Me.LibXDbSourceTable2.Source = Nothing
+        Me.LibXDbSourceTable2.TableName = Nothing
+        Me.LibXDbSourceTable2.UpdateOrder = 0
+        Me.LibXDbSourceTable2.UseRowRetrieve = False
+        '
+        'fecHasta
+        '
+        Me.fecHasta.CustomFormat = "dd/MM/yyyy"
+        Me.fecHasta.EditInitialValue = Nothing
+        Me.fecHasta.EditState = LibX.IEditProperty.InitialStateEnum.Enabled
+        Me.fecHasta.FieldDescription = ""
+        Me.fecHasta.FindInitialValue = "Now"
+        Me.fecHasta.FindState = LibX.IEditProperty.InitialStateEnum.Enabled
+        Me.fecHasta.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.fecHasta.IgnoreRequiered = False
+        Me.fecHasta.Location = New System.Drawing.Point(104, 212)
+        Me.fecHasta.Name = "fecHasta"
+        Me.fecHasta.NewInitialValue = Nothing
+        Me.fecHasta.NewState = LibX.IEditProperty.InitialStateEnum.Enabled
+        Me.fecHasta.Requiered = False
+        Me.fecHasta.Size = New System.Drawing.Size(96, 20)
+        Me.fecHasta.StatusBarPanelDescripcion = Nothing
+        Me.fecHasta.TabIndex = 4
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.btnClose)
+        Me.GroupBox1.Controls.Add(Me.btnEjecutar)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.GroupBox1.Location = New System.Drawing.Point(440, 48)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(88, 314)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnClose.Location = New System.Drawing.Point(8, 48)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(72, 32)
+        Me.btnClose.TabIndex = 2
+        Me.btnClose.Text = "Cerrar"
+        '
+        'btnEjecutar
+        '
+        Me.btnEjecutar.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnEjecutar.Location = New System.Drawing.Point(8, 14)
+        Me.btnEjecutar.Name = "btnEjecutar"
+        Me.btnEjecutar.Size = New System.Drawing.Size(72, 32)
+        Me.btnEjecutar.TabIndex = 0
+        Me.btnEjecutar.Text = "Imprimir"
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Blue
+        Me.Label5.Location = New System.Drawing.Point(0, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(530, 48)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "LISTADO DE EXISTENCIA"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.ProgressBar1)
+        Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.GroupBox2.Location = New System.Drawing.Point(8, 312)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(424, 48)
+        Me.GroupBox2.TabIndex = 10
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Progreso"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(8, 16)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(408, 23)
+        Me.ProgressBar1.TabIndex = 11
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label1.Location = New System.Drawing.Point(256, 56)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 16)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Ultimo cierre:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblLastClose
+        '
+        Me.lblLastClose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblLastClose.Location = New System.Drawing.Point(328, 56)
+        Me.lblLastClose.Name = "lblLastClose"
+        Me.lblLastClose.Size = New System.Drawing.Size(96, 20)
+        Me.lblLastClose.TabIndex = 11
+        '
+        'chk_cero
+        '
+        Me.chk_cero.Checked = True
+        Me.chk_cero.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chk_cero.Location = New System.Drawing.Point(16, 256)
+        Me.chk_cero.Name = "chk_cero"
+        Me.chk_cero.Size = New System.Drawing.Size(224, 16)
+        Me.chk_cero.TabIndex = 12
+        Me.chk_cero.Text = "Incluir productos con existencia en cero"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "ivitemm.sgroup_code"))
+        Me.TextBox1.Location = New System.Drawing.Point(74, 156)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox1.TabIndex = 13
+        Me.TextBox1.Text = ""
+        '
+        'TextBox2
+        '
+        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "ivitemm.group_code"))
+        Me.TextBox2.Location = New System.Drawing.Point(74, 132)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox2.TabIndex = 13
+        Me.TextBox2.Text = ""
+        '
+        'sgroup_name
+        '
+        Me.sgroup_name.Location = New System.Drawing.Point(122, 156)
+        Me.sgroup_name.Name = "sgroup_name"
+        Me.sgroup_name.ReadOnly = True
+        Me.sgroup_name.Size = New System.Drawing.Size(256, 20)
+        Me.sgroup_name.TabIndex = 13
+        Me.sgroup_name.TabStop = False
+        Me.sgroup_name.Text = ""
+        '
+        'group_name
+        '
+        Me.group_name.Location = New System.Drawing.Point(122, 132)
+        Me.group_name.Name = "group_name"
+        Me.group_name.ReadOnly = True
+        Me.group_name.Size = New System.Drawing.Size(256, 20)
+        Me.group_name.TabIndex = 13
+        Me.group_name.TabStop = False
+        Me.group_name.Text = ""
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label3.Location = New System.Drawing.Point(8, 156)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(56, 16)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Subgrupo:"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label4.Location = New System.Drawing.Point(25, 132)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 16)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Grupo:"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LibXLookup2
+        '
+        Me.LibXLookup2.AlternateFieldSearch = Nothing
+        Me.LibXLookup2.CheckText = Nothing
+        Me.LibXLookup2.DataMember = Nothing
+        Me.LibXLookup2.DataSource = Me.LibXConnector1
+        Me.LibXLookup2.DestParameters = New String() {"sgroup_code=sgroup_code", "sgroup_name=sgroup_name"}
+        Me.LibXLookup2.FilterField = Nothing
+        Me.LibXLookup2.IgnoreFindInBrowseMode = False
+        Me.LibXLookup2.isCanceled = False
+        Me.LibXLookup2.Location = New System.Drawing.Point(378, 156)
+        Me.LibXLookup2.LookCaption = "Marcas"
+        Me.LibXLookup2.Name = "LibXLookup2"
+        Me.LibXLookup2.PopupSize = New System.Drawing.Size(0, 0)
+        Me.LibXLookup2.ShowMessageNotFound = True
+        Me.LibXLookup2.ShowWarning = False
+        Me.LibXLookup2.Size = New System.Drawing.Size(16, 20)
+        Me.LibXLookup2.SizesColumns = Nothing
+        Me.LibXLookup2.SizesColumnsTab = Nothing
+        Me.LibXLookup2.SqlString = Nothing
+        Me.LibXLookup2.SQLTab = Nothing
+        Me.LibXLookup2.SrcParameters = New String() {"sgroup_code=sgroup_name"}
+        Me.LibXLookup2.TabIndex = 14
+        Me.LibXLookup2.TableName = "ivsgroupm"
+        Me.LibXLookup2.UseCopyConnection = False
+        Me.LibXLookup2.UseRowRetrieveEvents = False
+        Me.LibXLookup2.UseTab = False
+        Me.LibXLookup2.VisParameters = New String() {"Código=sgroup_code", "Descripción=sgroup_name"}
+        Me.LibXLookup2.WhereCondition = Nothing
+        Me.LibXLookup2.WhereParameters = Nothing
+        '
+        'LibXLookup3
+        '
+        Me.LibXLookup3.AlternateFieldSearch = Nothing
+        Me.LibXLookup3.CheckText = Nothing
+        Me.LibXLookup3.DataMember = Nothing
+        Me.LibXLookup3.DataSource = Me.LibXConnector1
+        Me.LibXLookup3.DestParameters = New String() {"group_code=group_code", "group_name=group_name"}
+        Me.LibXLookup3.FilterField = Nothing
+        Me.LibXLookup3.IgnoreFindInBrowseMode = False
+        Me.LibXLookup3.isCanceled = False
+        Me.LibXLookup3.Location = New System.Drawing.Point(378, 132)
+        Me.LibXLookup3.LookCaption = Nothing
+        Me.LibXLookup3.Name = "LibXLookup3"
+        Me.LibXLookup3.PopupSize = New System.Drawing.Size(0, 0)
+        Me.LibXLookup3.ShowMessageNotFound = True
+        Me.LibXLookup3.ShowWarning = False
+        Me.LibXLookup3.Size = New System.Drawing.Size(16, 20)
+        Me.LibXLookup3.SizesColumns = Nothing
+        Me.LibXLookup3.SizesColumnsTab = Nothing
+        Me.LibXLookup3.SqlString = Nothing
+        Me.LibXLookup3.SQLTab = Nothing
+        Me.LibXLookup3.SrcParameters = New String() {"group_code=group_code"}
+        Me.LibXLookup3.TabIndex = 14
+        Me.LibXLookup3.TableName = "ivgroupm"
+        Me.LibXLookup3.UseCopyConnection = False
+        Me.LibXLookup3.UseRowRetrieveEvents = False
+        Me.LibXLookup3.UseTab = False
+        Me.LibXLookup3.VisParameters = New String() {"Código=group_code", "Descripción=group_name"}
+        Me.LibXLookup3.WhereCondition = Nothing
+        Me.LibXLookup3.WhereParameters = Nothing
+        '
+        'TextBox4
+        '
+        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "ivitemm.prov_code"))
+        Me.TextBox4.Location = New System.Drawing.Point(74, 104)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox4.TabIndex = 19
+        Me.TextBox4.Text = ""
+        '
+        'prov_name
+        '
+        Me.prov_name.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "ivitemm.prov_code"))
+        Me.prov_name.Location = New System.Drawing.Point(122, 104)
+        Me.prov_name.Name = "prov_name"
+        Me.prov_name.ReadOnly = True
+        Me.prov_name.Size = New System.Drawing.Size(256, 20)
+        Me.prov_name.TabIndex = 17
+        Me.prov_name.TabStop = False
+        Me.prov_name.Text = ""
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label7.Location = New System.Drawing.Point(15, 104)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 16)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Suplidor:"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LibXLookup4
+        '
+        Me.LibXLookup4.AlternateFieldSearch = Nothing
+        Me.LibXLookup4.CheckText = Nothing
+        Me.LibXLookup4.DataMember = Nothing
+        Me.LibXLookup4.DataSource = Me.LibXConnector1
+        Me.LibXLookup4.DestParameters = New String() {"prov_code=prov_code", "prov_name=prov_name"}
+        Me.LibXLookup4.FilterField = Nothing
+        Me.LibXLookup4.IgnoreFindInBrowseMode = False
+        Me.LibXLookup4.isCanceled = False
+        Me.LibXLookup4.Location = New System.Drawing.Point(378, 104)
+        Me.LibXLookup4.LookCaption = Nothing
+        Me.LibXLookup4.Name = "LibXLookup4"
+        Me.LibXLookup4.PopupSize = New System.Drawing.Size(0, 0)
+        Me.LibXLookup4.ShowMessageNotFound = True
+        Me.LibXLookup4.ShowWarning = False
+        Me.LibXLookup4.Size = New System.Drawing.Size(16, 20)
+        Me.LibXLookup4.SizesColumns = Nothing
+        Me.LibXLookup4.SizesColumnsTab = Nothing
+        Me.LibXLookup4.SqlString = Nothing
+        Me.LibXLookup4.SQLTab = Nothing
+        Me.LibXLookup4.SrcParameters = New String() {"prov_code=prov_code"}
+        Me.LibXLookup4.TabIndex = 21
+        Me.LibXLookup4.TableName = "cpprovm"
+        Me.LibXLookup4.UseCopyConnection = False
+        Me.LibXLookup4.UseRowRetrieveEvents = False
+        Me.LibXLookup4.UseTab = False
+        Me.LibXLookup4.VisParameters = New String() {"Código=prov_code", "Descripción=prov_name"}
+        Me.LibXLookup4.WhereCondition = Nothing
+        Me.LibXLookup4.WhereParameters = Nothing
+        '
+        'TextBox8
+        '
+        Me.TextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "ivitemm.item_code"))
+        Me.TextBox8.Location = New System.Drawing.Point(74, 180)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox8.TabIndex = 27
+        Me.TextBox8.Text = ""
+        '
+        'txtitem_name
+        '
+        Me.txtitem_name.Location = New System.Drawing.Point(122, 180)
+        Me.txtitem_name.Name = "txtitem_name"
+        Me.txtitem_name.ReadOnly = True
+        Me.txtitem_name.Size = New System.Drawing.Size(256, 20)
+        Me.txtitem_name.TabIndex = 25
+        Me.txtitem_name.TabStop = False
+        Me.txtitem_name.Text = ""
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label9.Location = New System.Drawing.Point(11, 180)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(53, 16)
+        Me.Label9.TabIndex = 24
+        Me.Label9.Text = "Producto:"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LibXLookup6
+        '
+        Me.LibXLookup6.AlternateFieldSearch = Nothing
+        Me.LibXLookup6.CheckText = Nothing
+        Me.LibXLookup6.DataMember = Nothing
+        Me.LibXLookup6.DataSource = Me.LibXConnector1
+        Me.LibXLookup6.DestParameters = New String() {"item_code=item_code", "txtitem_name=item_name"}
+        Me.LibXLookup6.FilterField = Nothing
+        Me.LibXLookup6.IgnoreFindInBrowseMode = False
+        Me.LibXLookup6.isCanceled = False
+        Me.LibXLookup6.Location = New System.Drawing.Point(378, 180)
+        Me.LibXLookup6.LookCaption = Nothing
+        Me.LibXLookup6.Name = "LibXLookup6"
+        Me.LibXLookup6.PopupSize = New System.Drawing.Size(0, 0)
+        Me.LibXLookup6.ShowMessageNotFound = True
+        Me.LibXLookup6.ShowWarning = False
+        Me.LibXLookup6.Size = New System.Drawing.Size(16, 20)
+        Me.LibXLookup6.SizesColumns = Nothing
+        Me.LibXLookup6.SizesColumnsTab = Nothing
+        Me.LibXLookup6.SqlString = Nothing
+        Me.LibXLookup6.SQLTab = Nothing
+        Me.LibXLookup6.SrcParameters = New String() {"item_code=item_code"}
+        Me.LibXLookup6.TabIndex = 29
+        Me.LibXLookup6.TableName = "ivitemm"
+        Me.LibXLookup6.UseCopyConnection = False
+        Me.LibXLookup6.UseRowRetrieveEvents = False
+        Me.LibXLookup6.UseTab = False
+        Me.LibXLookup6.VisParameters = New String() {"Código=item_code", "Descripción=item_name"}
+        Me.LibXLookup6.WhereCondition = Nothing
+        Me.LibXLookup6.WhereParameters = Nothing
+        '
+        'r_ivonhnd01
+        '
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.ClientSize = New System.Drawing.Size(530, 368)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.txtitem_name)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.LibXLookup6)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.prov_name)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.LibXLookup4)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.sgroup_name)
+        Me.Controls.Add(Me.group_name)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.chk_cero)
+        Me.Controls.Add(Me.lblLastClose)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.fecHasta)
+        Me.Controls.Add(Me.LibXLookup2)
+        Me.Controls.Add(Me.LibXLookup3)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "r_ivonhnd01"
+        Me.Text = "Listado de Existencia"
+        CType(Me.LibXConnector1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ivitemm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ivitemr, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
+    End Sub
+
+#End Region
+
+    Private Sub LibXConnector1_BeforeExecuteQuery(ByVal sender As Object, ByVal e As LibX.XBeforeExecuteQueryEventArgs) Handles LibXConnector1.BeforeExecuteQuery
+        Dim xSelect As LibX.Data.XSelecStmt
+        Dim oTable As DataTable
+        Dim FechaBalanceInicial As Object
+        Dim SelectStmt As String
+        Dim ID As Integer
+        Try
+
+            e.DoFill = False
+
+            If Me.fecHasta.Value.ToString.Trim.Length <= 0 Then
+                Throw New ApplicationException("Debe especificar la fecha de cierre")
+            End If
+
+            If Not IsDate(Me.fecHasta.Value) Then
+                Throw New ApplicationException("Debe especificar una fecha válida")
+            End If
+
+            If CType(fecHasta.Value, Date) > LibX.Data.Manager.Connection.GetDate Then
+                Throw New ApplicationException("La Fecha no puede ser mayor a la fecha del día")
+            End If
+
+
+            SelectStmt = "Select max(cierr_date) from ivcierrm " & _
+                        " where cierr_date <= '" & CDate(Me.fecHasta.Value).ToString(LibX.Data.Manager.GetSaveDateFormat) & "'"
+
+            '" where cierr_date <= '" & Me.fecHasta.Value & "'"
+
+            FechaBalanceInicial = LibX.Data.Manager.GetScalar(SelectStmt)
+
+            If IsDBNull(FechaBalanceInicial) Then
+                Throw New ApplicationException("No existen cierres para esta fecha")
+            End If
+
+            'SelectStmt = "Select ivcierrm.item_code,ivcierrm.whse_code,ivitemv1.item_name,ivitemv1.unit_code,ivitemv1.Ubicacion, " & _
+            '             " ivcierrm.onhand,purch_cost,price " & _
+            '             " from ivcierrm, ivitemv1 " & _
+            '             " where cierr_date = '" & CType(FechaBalanceInicial, Date).ToString(LibX.Data.Manager.GetSaveDateFormat) & "'" & _
+            '             "   and ivcierrm.item_code = ivitemv1.item_code " & _
+            '             "   and ivcierrm.whse_code = ivitemv1.whse_code "
+            SelectStmt = "SELECT ivitemd.whse_code,ivitemm.item_code,ivitemm.item_name,ivitemd.purch_cost,ivitemm.unit_code," & _
+                         " ivitemd.price,ivcierrm.onhand,rtrim(ivitemd.estante) + '-' +  cast(ivitemd.loc_row as varchar) + '-' +  cast(ivitemd.loc_col AS VARCHAR) Ubicacion" & _
+                         " FROM ivitemm inner JOIN ivitemd " & _
+                         " ON ivitemm.item_code = ivitemd.item_code" & _
+                         " left outer join ivcierrm on  ivcierrm.item_code = ivitemd.item_code" & _
+                         " and ivcierrm.whse_code = ivitemd.whse_code" & _
+                         " and ivcierrm.cierr_date = '" & CType(FechaBalanceInicial, Date).ToString(LibX.Data.Manager.GetSaveDateFormat) & "'"
+
+            xSelect = New LibX.Data.XSelecStmt("ivcierrm", SelectStmt)
+
+            oTable = xSelect.GetTable(False)
+            xSelect.Dispose()
+
+            ProgressBar1.Maximum = oTable.Rows.Count + 1
+            ProgressBar1.Minimum = 1
+            ProgressBar1.Value = 1
+
+            LibX.Data.Manager.Connection.BeginTransaction()
+
+            ID = Val(DateTime.Now.Millisecond.ToString & DateTime.Now.Second.ToString & _
+                 DateTime.Now.Minute.ToString & DateTime.Now.Hour.ToString)
+
+            For Each oRow As DataRow In oTable.Rows
+                Dim oNewRow As DataRow = ivitemr.NewRow
+
+                oNewRow!itemid = ID
+                oNewRow!item_code = oRow!item_code
+                oNewRow!item_name = oRow!item_name
+                oNewRow!whse_code = oRow!whse_code
+                oNewRow!costus = oRow!purch_cost
+                oNewRow!unidads = oRow!unit_code
+                oNewRow!priceus = oRow!price
+                oNewRow!ubicac = oRow!Ubicacion
+                'oNewRow!costtotalrd = oRow!onhand * oNewRow!costrd
+                oNewRow!onhand = AplicarMovimientos(oRow!item_code.ToString, CDate(FechaBalanceInicial), CDate(Me.fecHasta.Value), Val(oRow!onhand.ToString))
+
+                If oNewRow!onhand <> 0 Then
+
+                    ivitemr.Rows.Add(oNewRow)
+
+
+                End If
+                ProgressBar1.Value += 1
+            Next
+
+            LibX.Data.Manager.Save(ivitemr)
+            LibX.Data.Manager.Connection.CommitTransaction()
+
+            If ivitemr.Rows.Count > 0 Then
+                imprimir()
+            End If
+
+        Catch ex As Exception
+            Log.Show(ex)
+        End Try
+    End Sub
+
+    Private Function AplicarMovimientos(ByVal item_code As String, ByVal fecha As Date, ByVal fechaf As Date, ByVal existencia As Integer) As Integer
+        Dim SelectStmt As String
+        Dim oTable As DataTable
+
+        Try
+
+            SelectStmt = "select ivtranrd.item_code,qty,ivtranrm.type_code,origen,ivunitd.factor" & _
+                        " from ivtranrd inner join ivtranrm" & _
+                        " on ivtranrd.trane_number= ivtranrm.trane_number" & _
+                        " inner join ivunitd" & _
+                        " on ivtranrd.unit_code = ivunitd.unit_code" & _
+                        " and ivtranrd.item_code = ivunitd.item_code" & _
+                        " and ivtranrm.doc_date > '" & fecha.ToString(LibX.Data.Manager.GetSaveDateFormat) & _
+                        "' and ivtranrm.doc_date <= '" & fechaf.ToString(LibX.Data.Manager.GetSaveDateFormat) & _
+                        "' inner join ivtypem " & _
+                        " on ivtranrm.type_code = ivtypem.type_code" & _
+                        " where ivtranrd.item_code = '" & item_code.Trim & "'"
+
+
+            oTable = LibX.Data.Manager.GetDataTable(SelectStmt)
+
+            For Each orow As DataRow In oTable.Rows
+                existencia += (Val(orow!qty.ToString) * Val(orow!origen.ToString)) * Val(orow!factor.ToString)
+            Next
+
+            Return existencia
+
+        Catch ex As Exception
+            LibX.Log.Show(ex)
+            Return -1
+        End Try
+    End Function
+
+    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnEjecutar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEjecutar.Click
+        Limpiar()
+        Me.LibXConnector1.AcceptFind()
+        Me.LibXConnector1.Find()
+        Me.fecHasta.Value = LibX.Data.Manager.Connection.GetDate
+
+    End Sub
+
+    Private Sub imprimir()
+        Dim oRep As LibX.ReportLib
+        Try
+            oRep = New LibX.ReportLib("INV", "r_ivonhnd01.rpt")
+            With oRep
+                .ParameterFields(1) = "FechaCierre;" & Me.fecHasta.Value & ";TRUE"
+                .Action = 1
+            End With
+        Catch ex As Exception
+            LibX.Log.Show(ex)
+        End Try
+    End Sub
+
+    Private Sub r_ftfact10_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.LibXConnector1.Find()
+        Randomize()
+    End Sub
+
+    Private Sub LibXConnector1_ExecutedAction(ByVal sender As Object, ByVal e As LibX.ExecutingActionEventArgs) Handles LibXConnector1.ExecutedAction
+        Try
+            If e.Action = LibxConnectionActions.Find Then
+                ShowLastClose()
+            End If
+        Catch ex As Exception
+            LibX.Log.Show(ex)
+        End Try
+    End Sub
+    Private Sub ShowLastClose()
+        Dim SelectStmt As String
+        Dim DateClose As String
+        Try
+
+            SelectStmt = "select max(cierr_date) from ivcierrm"
+
+            DateClose = LibX.Data.Manager.GetScalar(SelectStmt).ToString
+
+            lblLastClose.Text = CType(DateClose, Date).ToShortDateString
+
+        Catch ex As Exception
+            LibX.Log.Add(ex)
+
+        End Try
+    End Sub
+
+    Private Sub r_ivonhnd01_Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Limpiar()
+    End Sub
+
+    Private Sub Limpiar()
+        Dim DeleteStmt As String
+        Try
+            'If ivitemr.Rows.Count <= 0 Then
+            '    Exit Sub
+            'End If
+
+            DeleteStmt = "delete from ivitemr "
+            'where(itemid = " & ivitemr.Rows(0)!itemid.ToString")
+
+            'If ivitemr.Rows.Count > 0 Then
+            '    For Each orow As DataRow In ivitemr.Rows
+            '        orow.Delete()
+            '    Next
+            'End If
+
+            LibX.Data.Manager.ExecuteNonQuery(DeleteStmt)
+
+        Finally
+            ivitemr.Rows.Clear()
+        End Try
+
+    End Sub
+
+    Private Sub brand_name_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles sgroup_name.TextChanged
+
+    End Sub
+
+   
+    Private Sub ProgressBar1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProgressBar1.Click
+
+    End Sub
+End Class

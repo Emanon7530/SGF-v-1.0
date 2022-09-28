@@ -1,0 +1,14 @@
+D:\Emanon\Manon Sys\SGF 1.0\Menu\bin\Main.exe.config
+D:\Emanon\Manon Sys\SGF 1.0\Menu\bin\Main.exe
+D:\Emanon\Manon Sys\SGF 1.0\Menu\bin\Main.pdb
+D:\Emanon\Manon Sys\SGF 1.0\Menu\bin\Main.xml
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.frmTreeMenu.resources
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.frmVencimiento.resources
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.frmSplash.resources
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.sgtmain.resources
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.vbproj.GenerateResource.cache
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.vbproj.CoreCompileInputs.cache
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.exe
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.xml
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.pdb
+D:\Emanon\Manon Sys\SGF 1.0\Menu\obj\Debug\Main.vbproj.AssemblyReference.cache

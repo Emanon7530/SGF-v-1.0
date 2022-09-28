@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="es-DO">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="iventrdd">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entr_number" type="xs:int" />
+              <xs:element name="item_code" type="xs:int" minOccurs="0" />
+              <xs:element name="item_name" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" type="xs:int" minOccurs="0" />
+              <xs:element name="prov_code" type="xs:int" minOccurs="0" />
+              <xs:element name="whse_code" type="xs:int" minOccurs="0" />
+              <xs:element name="line_no" type="xs:int" />
+              <xs:element name="Expr1" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ivseriem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="serie_number" type="xs:string" />
+              <xs:element name="entr_number" type="xs:int" minOccurs="0" />
+              <xs:element name="item_code" type="xs:int" />
+              <xs:element name="whse_code" type="xs:int" minOccurs="0" />
+              <xs:element name="prov_code" type="xs:int" minOccurs="0" />
+              <xs:element name="serie_status" type="xs:int" minOccurs="0" />
+              <xs:element name="ftserial_no" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ivseriem" />
+      <xs:field xpath="mstns:serie_number" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

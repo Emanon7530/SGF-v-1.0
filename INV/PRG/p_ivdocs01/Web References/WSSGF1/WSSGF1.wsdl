@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://REDSOFT-PR1/WSSGF1/WSSGF1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://REDSOFT-PR1/WSSGF1/WSSGF1" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://REDSOFT-PR1/WSSGF1/WSSGF1">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="GetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="itemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaestro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaestroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarMaestroResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearEntradasFromSalidas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearEntradasFromSalidasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearEntradasFromSalidasResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </types>
+  <message name="GetProductSoapIn">
+    <part name="parameters" element="s0:GetProduct" />
+  </message>
+  <message name="GetProductSoapOut">
+    <part name="parameters" element="s0:GetProductResponse" />
+  </message>
+  <message name="InsertarMaestroSoapIn">
+    <part name="parameters" element="s0:InsertarMaestro" />
+  </message>
+  <message name="InsertarMaestroSoapOut">
+    <part name="parameters" element="s0:InsertarMaestroResponse" />
+  </message>
+  <message name="CrearEntradasFromSalidasSoapIn">
+    <part name="parameters" element="s0:CrearEntradasFromSalidas" />
+  </message>
+  <message name="CrearEntradasFromSalidasSoapOut">
+    <part name="parameters" element="s0:CrearEntradasFromSalidasResponse" />
+  </message>
+  <message name="GetProductHttpGetIn">
+    <part name="itemCode" type="s:string" />
+  </message>
+  <message name="GetProductHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetProductHttpPostIn">
+    <part name="itemCode" type="s:string" />
+  </message>
+  <message name="GetProductHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <portType name="WSSGF1Soap">
+    <operation name="GetProduct">
+      <input message="s0:GetProductSoapIn" />
+      <output message="s0:GetProductSoapOut" />
+    </operation>
+    <operation name="InsertarMaestro">
+      <input message="s0:InsertarMaestroSoapIn" />
+      <output message="s0:InsertarMaestroSoapOut" />
+    </operation>
+    <operation name="CrearEntradasFromSalidas">
+      <input message="s0:CrearEntradasFromSalidasSoapIn" />
+      <output message="s0:CrearEntradasFromSalidasSoapOut" />
+    </operation>
+  </portType>
+  <portType name="WSSGF1HttpGet">
+    <operation name="GetProduct">
+      <input message="s0:GetProductHttpGetIn" />
+      <output message="s0:GetProductHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="WSSGF1HttpPost">
+    <operation name="GetProduct">
+      <input message="s0:GetProductHttpPostIn" />
+      <output message="s0:GetProductHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="WSSGF1Soap" type="s0:WSSGF1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetProduct">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/GetProduct" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InsertarMaestro">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/InsertarMaestro" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CrearEntradasFromSalidas">
+      <soap:operation soapAction="http://REDSOFT-PR1/WSSGF1/WSSGF1/CrearEntradasFromSalidas" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="WSSGF1HttpGet" type="s0:WSSGF1HttpGet">
+    <http:binding verb="GET" />
+    <operation name="GetProduct">
+      <http:operation location="/GetProduct" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="WSSGF1HttpPost" type="s0:WSSGF1HttpPost">
+    <http:binding verb="POST" />
+    <operation name="GetProduct">
+      <http:operation location="/GetProduct" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSSGF1">
+    <port name="WSSGF1Soap" binding="s0:WSSGF1Soap">
+      <soap:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </port>
+    <port name="WSSGF1HttpGet" binding="s0:WSSGF1HttpGet">
+      <http:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </port>
+    <port name="WSSGF1HttpPost" binding="s0:WSSGF1HttpPost">
+      <http:address location="http://localhost/WSSGF1/WSSGF1.asmx" />
+    </port>
+  </service>
+</definitions>

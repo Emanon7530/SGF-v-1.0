@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CierreInventario", "CierreInventario.vbproj", "{F9BFA312-5B96-4EBD-A8CB-E3EB43613295}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SGTCierreInventarioSetup", "..\SGTCierreInventarioSetup\SGTCierreInventarioSetup.vdproj", "{011E45FE-7FDD-464F-9AB4-2D1B1A274E64}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestCierre", "..\TestCierre\TestCierre.vbproj", "{F4923E97-56DB-48EA-8806-1B994BF3980B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F9BFA312-5B96-4EBD-A8CB-E3EB43613295}.Debug.ActiveCfg = Debug|.NET
+		{F9BFA312-5B96-4EBD-A8CB-E3EB43613295}.Debug.Build.0 = Debug|.NET
+		{F9BFA312-5B96-4EBD-A8CB-E3EB43613295}.Release.ActiveCfg = Release|.NET
+		{F9BFA312-5B96-4EBD-A8CB-E3EB43613295}.Release.Build.0 = Release|.NET
+		{011E45FE-7FDD-464F-9AB4-2D1B1A274E64}.Debug.ActiveCfg = Debug
+		{011E45FE-7FDD-464F-9AB4-2D1B1A274E64}.Debug.Build.0 = Debug
+		{011E45FE-7FDD-464F-9AB4-2D1B1A274E64}.Release.ActiveCfg = Release
+		{F4923E97-56DB-48EA-8806-1B994BF3980B}.Debug.ActiveCfg = Debug|.NET
+		{F4923E97-56DB-48EA-8806-1B994BF3980B}.Debug.Build.0 = Debug|.NET
+		{F4923E97-56DB-48EA-8806-1B994BF3980B}.Release.ActiveCfg = Release|.NET
+		{F4923E97-56DB-48EA-8806-1B994BF3980B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

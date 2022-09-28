@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibXPrintFiscal", "LibXPrintFiscal.csproj", "{96832CC5-8A95-4B7F-BC72-049ACE901FAB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{96832CC5-8A95-4B7F-BC72-049ACE901FAB}.Debug.ActiveCfg = Debug|.NET
+		{96832CC5-8A95-4B7F-BC72-049ACE901FAB}.Debug.Build.0 = Debug|.NET
+		{96832CC5-8A95-4B7F-BC72-049ACE901FAB}.Release.ActiveCfg = Release|.NET
+		{96832CC5-8A95-4B7F-BC72-049ACE901FAB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

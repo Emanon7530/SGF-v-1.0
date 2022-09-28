@@ -1,0 +1,350 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{1A6A30F1-056B-488B-94F5-B30AD4F434C7}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "caja.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "i_ptvfact01"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "i_ptvfact01"
+                StartupObject = "i_ptvfact01.i_ptvfact01"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\..\..\..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "ivpstinv01"
+                    AssemblyName = "ivpstinv01"
+                    HintPath = "..\..\..\INV\LIB\Operaciones\PostInventory\bin\ivpstinv01.dll"
+                />
+                <Reference
+                    Name = "Crystal"
+                    Guid = "{00025600-0000-0000-C000-000000000046}"
+                    VersionMajor = "5"
+                    VersionMinor = "2"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\..\..\..\..\..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\..\..\..\..\..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\..\..\..\..\..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "ccfctpst01"
+                    AssemblyName = "ccfctpst01"
+                    HintPath = "..\..\..\CXC\LIB\Posteos\PostDocument\bin\ccfctpst01.dll"
+                />
+                <Reference
+                    Name = "ivcomm01"
+                    AssemblyName = "ivcomm01"
+                    HintPath = "..\..\..\INV\LIB\Common\bin\ivcomm01.dll"
+                />
+                <Reference
+                    Name = "cjentdd01"
+                    AssemblyName = "cjentdd01"
+                    HintPath = "..\..\..\CAJ\LIB\Entidades\bin\cjentdd01.dll"
+                />
+                <Reference
+                    Name = "adentdd01"
+                    AssemblyName = "adentdd01"
+                    HintPath = "..\..\..\ADM\LIB\Entidades\bin\adentdd01.dll"
+                />
+                <Reference
+                    Name = "ftcommon"
+                    AssemblyName = "ftcommon"
+                    HintPath = "..\..\..\FCT\LIB\Common\bin\ftcommon.dll"
+                />
+                <Reference
+                    Name = "ftentdd01"
+                    AssemblyName = "ftentdd01"
+                    HintPath = "..\..\..\FCT\LIB\Entidades\bin\ftentdd01.dll"
+                />
+                <Reference
+                    Name = "ccentdd01"
+                    AssemblyName = "ccentdd01"
+                    HintPath = "..\..\..\CXC\LIB\Entidades\bin\ccentdd01.dll"
+                />
+                <Reference
+                    Name = "LibXComponents"
+                    AssemblyName = "LibXComponents"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\LibXComponents.dll"
+                />
+                <Reference
+                    Name = "MaskedTextBox"
+                    AssemblyName = "MaskedTextBox"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\MaskedTextBox.dll"
+                />
+                <Reference
+                    Name = "XMsgComponents"
+                    AssemblyName = "XMsgComponents"
+                    HintPath = "..\..\..\..\Controls\LibXComponents\bin\XMsgComponents.dll"
+                />
+                <Reference
+                    Name = "ftpostdoc"
+                    AssemblyName = "ftpostdoc"
+                    HintPath = "..\..\..\FCT\LIB\Operaciones\PosteoDocumento\bin\ftpostdoc.dll"
+                />
+                <Reference
+                    Name = "SGT.PuntodeVenta.Entidades"
+                    AssemblyName = "SGT.PuntodeVenta.Entidades"
+                    HintPath = "..\..\LIB\Entidades\bin\SGT.PuntodeVenta.Entidades.dll"
+                />
+                <Reference
+                    Name = "cjpsttrn01"
+                    AssemblyName = "cjpsttrn01"
+                    HintPath = "..\..\..\CAJ\LIB\Operaciones\Cobro\bin\cjpsttrn01.dll"
+                />
+                <Reference
+                    Name = "HelperClass"
+                    AssemblyName = "HelperClass"
+                    HintPath = "..\..\..\FSC\HelperClass\bin\HelperClass.dll"
+                />
+                <Reference
+                    Name = "LibXPrintFiscal"
+                    AssemblyName = "LibXPrintFiscal"
+                    HintPath = "..\..\..\FSC\LibXPrintFiscal\bin\LibXPrintFiscal.dll"
+                />
+                <Reference
+                    Name = "LibxPrintFiscalFactura"
+                    AssemblyName = "LibxPrintFiscalFactura"
+                    HintPath = "..\..\..\FSC\LibxPrintFiscalFactura\bin\LibxPrintFiscalFactura.dll"
+                />
+                <Reference
+                    Name = "AxInterop.EpsonFPHostControlX"
+                    AssemblyName = "AxInterop.EpsonFPHostControlX"
+                    HintPath = "..\..\..\FSC\LibxPrintFiscalSGF\bin\AxInterop.EpsonFPHostControlX.dll"
+                />
+                <Reference
+                    Name = "Interop.EpsonFPHostControlX"
+                    AssemblyName = "Interop.EpsonFPHostControlX"
+                    HintPath = "..\..\..\FSC\LibxPrintFiscalSGF\bin\Interop.EpsonFPHostControlX.dll"
+                />
+                <Reference
+                    Name = "LibxPrintFiscalSGF"
+                    AssemblyName = "LibxPrintFiscalSGF"
+                    HintPath = "..\..\..\FSC\LibxPrintFiscalSGF\bin\LibxPrintFiscalSGF.dll"
+                />
+                <Reference
+                    Name = "iventidd01"
+                    AssemblyName = "iventidd01"
+                    HintPath = "..\..\..\INV\LIB\Entidades\bin\iventidd01.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "caja.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmTipoDocumento.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmTipoDocumento.resx"
+                    DependentUpon = "frmTipoDocumento.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ftdomim01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ftdomim01.resx"
+                    DependentUpon = "i_ftdomim01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_fthold01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_fthold01.resx"
+                    DependentUpon = "i_fthold01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvfact01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvfact01.resx"
+                    DependentUpon = "i_ptvfact01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvfact02.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvfact02.resx"
+                    DependentUpon = "i_ptvfact02.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvfact03.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvfact03.resx"
+                    DependentUpon = "i_ptvfact03.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvfact04.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvfact04.resx"
+                    DependentUpon = "i_ptvfact04.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvfact05.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvfact05.resx"
+                    DependentUpon = "i_ptvfact05.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_ptvvend01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_ptvvend01.resx"
+                    DependentUpon = "i_ptvvend01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "i_pvmensj01.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "i_pvmensj01.resx"
+                    DependentUpon = "i_pvmensj01.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </VisualBasic>
+</VisualStudioProject>
+
